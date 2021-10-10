@@ -1,0 +1,51 @@
+{
+  "name": "medfit-backend",
+  "version": "1.0.0",
+  "description": "A one-stop portal for healthcare",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "prettify": "prettier --config ./.prettierrc --write **/*.{js,md}",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ignore-path .eslintignore --cache --color --no-error-on-unmatched-pattern --fix **/ --ext .js,.jsx",
+    "pre-commit": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sid200026/MedFit-Backend.git"
+  },
+  "keywords": [
+    "healthcare"
+  ],
+  "author": "Siddharth Singha Roy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sid200026/MedFit-Backend/issues"
+  },
+  "homepage": "https://github.com/Sid200026/MedFit-Backend#readme",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "qs": "^6.10.1",
+    "sequelize": "^6.6.5",
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.4.0",
+    "winston": "^3.3.3"
+  }
+}
